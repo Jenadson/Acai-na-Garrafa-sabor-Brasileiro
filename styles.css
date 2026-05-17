@@ -629,10 +629,25 @@ a:focus-visible {
 
 @media (max-width: 620px) {
   .top-strip {
-    justify-content: flex-start;
-    gap: 1.35rem;
-    padding-inline: 0.75rem;
-    font-size: 0.66rem;
+    justify-content: center;
+    gap: 0.95rem;
+    padding-inline: 0.45rem;
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
+  }
+
+  .top-strip span:nth-child(4) {
+    display: none;
+  }
+
+  .top-strip span:not(:last-child)::after {
+    right: -0.58rem;
+    width: 5px;
+    height: 5px;
+  }
+
+  .top-strip span:nth-child(3)::after {
+    display: none;
   }
 
   .section-shell,
@@ -650,8 +665,8 @@ a:focus-visible {
   }
 
   .brand {
-    font-size: 0.86rem;
-    max-width: 190px;
+    font-size: 0.8rem;
+    max-width: 170px;
   }
 
   .header-button {
