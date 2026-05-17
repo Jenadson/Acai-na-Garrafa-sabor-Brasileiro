@@ -657,22 +657,7 @@ a:focus-visible {
   }
 
   .site-header {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 0.7rem;
-    padding: 9px 11px;
-    border-radius: 0;
-    box-shadow: 0 5px 0 var(--acai-950);
-  }
-
-  .brand {
-    font-size: 0.8rem;
-    max-width: 170px;
-  }
-
-  .header-button {
-    min-height: 38px;
-    padding-inline: 0.72rem;
-    font-size: 0.78rem;
+    display: none;
   }
 
   .hero {
