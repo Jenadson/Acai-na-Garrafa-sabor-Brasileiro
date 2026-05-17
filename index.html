@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Landing page promocional do Açaí na Garrafa sabor Brasileiro, natural, refrescante e pronto para o verao."
+    />
+    <title>Açaí na Garrafa sabor Brasileiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-strip" aria-label="Promocao">
+      <span>Energia que vem da natureza</span>
+      <span>350ml</span>
+      <span>Apenas 5 euros</span>
+      <span>100% natural</span>
+    </div>
+
+    <header class="site-header" aria-label="Navegacao principal">
+      <a class="brand" href="#top" aria-label="Voltar para o inicio">
+        <span>Açaí na Garrafa sabor Brasileiro</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Secoes da pagina">
+        <a href="#produto">Produto</a>
+        <a href="#pedido">Pedido</a>
+      </nav>
+
+      <a class="header-button" href="#pedido">Pedir agora</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Seu verão mais leve e delicioso.</h1>
+          <p class="hero-text">
+            Açaí na Garrafa sabor Brasileiro, pronto para beber gelado, com sabor
+            intenso, energia natural e aquela cara tropical que chama atencao
+            no primeiro olhar.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#pedido">Quero o meu</a>
+            <a class="button button-secondary" href="#produto">Ver detalhes</a>
+          </div>
+
+          <div class="proof-row" aria-label="Diferenciais principais">
+            <span>Saude</span>
+            <span>Disposicao</span>
+            <span>Sabor</span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img src="img/img02.jpeg" alt="Açaí na Garrafa sabor Brasileiro com fundo tropical" />
+          <div class="price-bubble">
+            <span>Apenas</span>
+            <strong>5€</strong>
+          </div>
+          <div class="size-tag">
+            <strong>350</strong>
+            <span>ml</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Chamada promocional">
+        <div class="marquee-track">
+          <span>Ingredientes naturais</span>
+          <span>Energia que da disposicao</span>
+          <span>Feito com amor</span>
+          <span>Mantenha congelado -18C</span>
+          <span>Ingredientes naturais</span>
+          <span>Energia que da disposicao</span>
+        </div>
+      </section>
+
+      <section class="product-section section-shell" id="produto">
+        <div class="poster-card">
+          <img src="img/img01.jpeg" alt="Poster promocional do Açaí na Garrafa sabor Brasileiro" />
+        </div>
+
+        <div class="product-copy">
+          <h2>Açaí na garrafa sabor Brasileiro.</h2>
+          <div class="feature-list">
+            <div>
+              <span>350ml</span>
+              <strong>Porcao individual</strong>
+            </div>
+            <div>
+              <span>5€</span>
+              <strong>Preco especial</strong>
+            </div>
+            <div>
+              <span>-18C</span>
+              <strong>Manter congelado</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flavor-band">
+        <div class="section-shell flavor-content">
+          <div>
+            <h2>Puro sabor, pura energia.</h2>
+          </div>
+          <a class="button button-light" href="#pedido">Peca o seu agora</a>
+        </div>
+      </section>
+
+      <section class="order-section section-shell" id="pedido">
+        <div class="order-copy">
+          <h2>Quer garantir suas garrafas?</h2>
+          <p>
+            Preencha os dados e envie o pedido direto pelo WhatsApp
+            +351 966 569 677.
+          </p>
+        </div>
+
+        <form class="order-form" id="order-form">
+          <label>
+            Nome
+            <input type="text" name="name" placeholder="Seu nome" required />
+          </label>
+          <label>
+            Quantidade
+            <select name="combo" required>
+              <option value="">Escolha uma opcao</option>
+              <option>1 garrafa de 350ml</option>
+              <option>3 garrafas de 350ml</option>
+              <option>6 garrafas de 350ml</option>
+              <option>Pedido para revenda</option>
+            </select>
+          </label>
+          <button class="button button-primary" type="submit">Preparar mensagem</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Açaí na Garrafa sabor Brasileiro</span>
+      <a href="https://jenadson.github.io/basilioDev/" target="_blank" rel="noopener noreferrer">BasilosDev</a>
+      <a href="#top">Voltar ao topo</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
